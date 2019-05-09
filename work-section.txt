@@ -62,5 +62,47 @@ select count(*) from flight_data where flight_num=335;
 select * from flight_data order by flight_num limit 10
 select flight_num,count(*) from flight_data group by flight_num 
 
+
+select * from airports limit 10
+SELECT
+   avg(arr_delay)
+FROM
+   flight_data
+WHERE
+   month=1
+   AND origin='SFO';
+
+
+
 Joins
 ------------
+SELECT name,AVG(arr_delay)
+FROM flight_data f
+  INNER JOIN airports a
+  ON (f.origin=a.code)
+WHERE
+   month=1
+GROUP BY
+   name;
+
+
+SELECT
+   name,
+   AVG(arr_delay)
+FROM
+   flight_data f
+   INNER JOIN airports a
+   ON (f.origin=a.code)
+WHERE
+   month=1
+GROUP BY
+   name;
+
+
+
+
+
+
+
+
+
