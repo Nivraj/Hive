@@ -1,6 +1,8 @@
 download it as zip file;change your directory to downloads location
+
 1. local unix shell commands
 	cd /Downloads
+	wget https://github.com/markgrover/cloudcon-hive/blob/master/2008.tar.gz
 	untar the file using tar utility
 
 	[cloudera@quickstart cloudcon-hive-master]$ ls -l
