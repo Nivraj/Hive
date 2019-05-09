@@ -3,7 +3,6 @@ download it as zip file;change your directory to downloads location
 	cd /Downloads
 	untar the file using tar utility
 
-	[cloudera@quickstart ~]$ cd /home/cloudera/Downloads/cloudcon-hive-master
 	[cloudera@quickstart cloudcon-hive-master]$ ls -l
 	total 170588
 	-rw-rw-r-- 1 cloudera cloudera 174620638 May 18  2014 2008.tar.gz
